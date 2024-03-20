@@ -1,24 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+import ForgotPass from './Components/ForgotPass';
+import Auth from './Components/Auth';
+import Food from './Components/Food';
+import Category from './Components/Category';
+import Orders from './Components/Orders';
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+   
+    <Routes>
+     
+      <Route path='/' element={<Auth />} />
+      <Route path='/Category' element={<Category />} />
+      <Route path='/Reset-Password' element={<ForgotPass />} />
+      <Route path='/Food' element={<Food />} />
+      <Route path='/Orders' element={<Orders />} />
+     
+      
+
+
+    </Routes>
+    
+    </BrowserRouter>
   );
 }
 

@@ -1,0 +1,24 @@
+.authcontainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  
+  
+  body{
+    background-color: #E4E5E4 !important;
+  }
+
+  @media screen and (max-width: 700px) {
+    .Credbox {
+      margin-top: 30px !important;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .Credbox {
+      width: 350px !important;
+    }
+  }

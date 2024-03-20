@@ -1,0 +1,8 @@
+.active {
+    /* Set the background color for the active link */
+    color: blue !important; 
+    font-weight: bolder;
+    /* Set the text color for the active link */
+    /* Optional: Add padding for better appearance */
+  }
+  
